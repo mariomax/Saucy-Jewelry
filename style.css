@@ -1,0 +1,140 @@
+/* Navigation */
+.elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-sub-item {
+  font-size: 1em;
+}
+
+.sub-menu .elementor-nav-menu--dropdown {
+  background-color: transparent;
+}
+
+/* Reset */
+.ast-separate-container .ast-article-post,
+.ast-separate-container .ast-article-single {
+  padding: 0;
+}
+
+/* Titles */
+h1 {
+  line-height: .9;
+}
+
+.h1-span {
+  font-family: "Roboto Condensed";
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 0;
+}
+
+.h1-subtitle {
+  font-size: 33px;
+  padding-left: 50px;
+}
+
+/* Other Text */
+.stores ul {
+  margin: 0 0 1.5em .3em;
+}
+
+.stores li {
+  font-size: 16px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 16px;
+}
+
+.stores li:before {
+  content: "\25BA \0020";
+  font-size: 6px;
+  position: absolute;
+  top: 10px;
+  left: -1px;
+}
+
+/* Sidebar */
+.widget-title {
+  font-family: "Roboto Condensed";
+}
+
+.side-link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.credit-button .fa {
+  color: #F3F3F3;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .reset-section {
+    padding: 0 2em !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-icon img {
+    max-width: 30px;
+  }
+
+  .ast-right-sidebar #secondary {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .reset-section {
+    padding: 2em !important;
+  }
+}
+
+@media (max-width: 544px) {
+  .h1-span {
+    font-size: 40px;
+  }
+
+  .ast-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ast-separate-container #content .ast-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ast-separate-container.ast-two-container #secondary .widget {
+    padding: 2em 0 0;
+  }
+
+  .ast-right-sidebar #secondary {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .ast-separate-container.ast-two-container.ast-right-sidebar #secondary {
+    border-left: 1px solid #eee;
+    margin-left: -1px;
+  }
+
+  .ast-separate-container.ast-two-container #secondary .widget {
+    padding: 0;
+  }
+
+  /* WooCommerce */
+  .astra-shop-summary-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 12em;
+  }
+
+  .elementor-583 .elementor-element.elementor-element-bdf9820.elementor-wc-products ul.products li.product .button {
+    margin-top: auto;
+    align-self: center;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 1200px) {}

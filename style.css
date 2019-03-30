@@ -64,6 +64,14 @@ h1 {
   color: #F3F3F3;
 }
 
+/* WooCommerce */
+.woocommerce a.button,
+.woocommerce button.button {
+  color: #FFF !important;
+  font-family: "Roboto Condensed";
+  font-weight: 600;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
   .reset-section {

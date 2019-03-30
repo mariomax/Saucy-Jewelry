@@ -5,7 +5,8 @@ Elisa Saucy's WooCommerce WordPress site
 - WordPress
 - Astra theme
 - Astra child theme
-- Custom CSS
+  * style.css
+  * functions.php
 - Elementor Pro
 - WooCommerce
 - VS Code

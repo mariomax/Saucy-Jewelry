@@ -71,6 +71,9 @@ h1 {
   font-family: "Roboto Condensed";
   font-weight: 600;
 }
+.woocommerce div.product form.cart .variations td.label {
+  margin-bottom: 8px;
+}
 
 /* Media Queries */
 @media (max-width: 1024px) {

@@ -30,6 +30,10 @@ h1 {
   padding-left: 50px;
 }
 
+.lookbook-intro h4 {
+  margin: 0;
+}
+
 /* Other Text */
 .stores ul {
   margin: 0 0 1.5em .3em;
@@ -48,6 +52,16 @@ h1 {
   position: absolute;
   top: 10px;
   left: -1px;
+}
+
+/* Images */
+.lookbook-single img,
+.lookbook-grid img {
+  border-radius: 3px;
+}
+.gallery-icon {
+  border-radius: 0;
+  border: none;
 }
 
 /* Sidebar */

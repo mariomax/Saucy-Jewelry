@@ -53,6 +53,23 @@ h1 {
   top: 10px;
   left: -1px;
 }
+li.cat-item {
+	font-size: 24px;
+	list-style-type: none;
+	position: relative;
+}
+li:before.cat-item {
+	content: "\25BA \0020";
+	font-size: 6px;
+	position: absolute;
+}
+ul.product-categories {
+	margin: 0 0 1.5em 2em;
+}
+.mobile-cats h5 {
+	font-family: "Roboto Condensed";
+	font-size: 28px;
+}
 
 /* WooCommerce */
 .woocommerce a.button,
@@ -133,6 +150,10 @@ ul.products.columns-4 {
   .reset-section {
     padding: 2em .5em !important;
   }
+  .mobile-cats {
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 544px) {
@@ -160,9 +181,13 @@ ul.products.columns-4 {
     padding-left: 0;
     padding-right: 0;
   }
+  .mobile-cats {
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+  }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .ast-separate-container.ast-two-container.ast-right-sidebar #secondary {
     border-left: 1px solid #eee;
     margin-left: -1px;

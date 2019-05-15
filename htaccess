@@ -1,3 +1,9 @@
+# BEGIN litespeed noabort
+<IfModule rewrite_module>
+RewriteEngine On
+RewriteRule .* - [E=noabort:1]
+</IfModule>
+# END litespeed noabort
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

@@ -104,11 +104,14 @@ ul.product-categories {
 
 .woocommerce ul.products,
 .woocommerce-page ul.products {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 ul.products.columns-4 {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .elementor-583 .elementor-element.elementor-element-974cd78 a>img {
@@ -182,6 +185,7 @@ ul.products.columns-4 {
   .woocommerce button.button {
     width: auto !important;
   }
+
   .woocommerce-page #content table.cart .button[name=apply_coupon] {
     padding: 10px 35px;
   }
@@ -231,16 +235,20 @@ ul.products.columns-4 {
 
   /* WooCommerce */
   .astra-shop-summary-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     height: 12em;
   }
 
   .elementor-583 .elementor-element.elementor-element-bdf9820.elementor-wc-products ul.products li.product .button {
     margin-top: auto;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     padding: 12px 24px;
   }
 }
-
-@media (max-width: 1200px) {}

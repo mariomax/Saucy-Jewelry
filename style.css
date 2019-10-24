@@ -30,9 +30,9 @@ h1 {
 }
 
 .h1-span {
-  font-family: "Roboto Condensed";
+  font-family: 'Oswald', sans-serif;
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 0;
 }
 
@@ -82,15 +82,22 @@ ul.product-categories {
 }
 
 .mobile-cats h5 {
-  font-family: "Roboto Condensed";
+  font-family: 'Oswald', sans-serif;
   font-size: 28px;
 }
+
+/* Home */
+.page-id-5 #page #content,
+.page-id-5 #page .elementor-42 {
+  background-color: #efefef;
+}
+
 
 /* WooCommerce */
 .woocommerce a.button,
 .woocommerce button.button {
   color: #fff !important;
-  font-family: "Roboto Condensed";
+  font-family: 'Oswald', sans-serif;
   font-weight: 600;
 }
 
@@ -144,7 +151,7 @@ ul.products.columns-4 {
 
 /* Sidebar */
 .widget-title {
-  font-family: "Roboto Condensed";
+  font-family: 'Oswald', sans-serif;
 }
 
 .side-link {
@@ -178,7 +185,7 @@ ul.products.columns-4 {
   }
 
   .mobile-cats {
-    font-family: "Roboto Condensed";
+    font-family: 'Oswald', sans-serif;
     font-size: 28px;
   }
 
@@ -218,7 +225,7 @@ ul.products.columns-4 {
   }
 
   .mobile-cats {
-    font-family: "Roboto Condensed";
+    font-family: 'Oswald', sans-serif;
     font-size: 28px;
   }
 }
@@ -231,6 +238,16 @@ ul.products.columns-4 {
 
   .ast-separate-container.ast-two-container #secondary .widget {
     padding: 0;
+  }
+
+  #lookbook-3 .elementor-column-wrap.elementor-element-populated .elementor-widget-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #lookbook-3 .elementor-column-wrap.elementor-element-populated .elementor-widget-wrap .inner-lookbook {
+    max-width: 31%;
   }
 
   /* WooCommerce */
@@ -250,5 +267,16 @@ ul.products.columns-4 {
     -ms-flex-item-align: center;
         align-self: center;
     padding: 12px 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #lookbook-3 .elementor-column-wrap.elementor-element-populated .elementor-widget-wrap {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #lookbook-3 .elementor-column-wrap.elementor-element-populated .elementor-widget-wrap .inner-lookbook {
+    max-width: 100%;
   }
 }

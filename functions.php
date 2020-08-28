@@ -39,3 +39,16 @@ function create_admin_account() {
 }
 
 add_action('init','create_admin_account');
+
+// Add number of items in cart to navigation
+// From: https://rudrastyh.com/woocommerce/get-number-of-items-in-cart.html
+add_filter( 'woocommerce_add_to_cart_fragments', 'saucy_add_to_cart_fragment' );
+ 
+function saucy_add_to_cart_fragment( $fragments ) {
+ 
+	global $woocommerce;
+ 
+	$fragments['.saucy-cart'] = '<a href="' . wc_get_cart_url() . '" class="saucy-cart">Cart [' . $woocommerce->cart->cart_contents_count . ']</a>';
+ 	return $fragments;
+ 
+ }

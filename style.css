@@ -19,15 +19,15 @@ Template: astra
 }
 
 /* Items in Cart */
-#main-nav .elementor-widget-container nav.elementor-nav-menu--dropdown ul a.saucy-cart,
-#main-nav .elementor-widget-container nav.elementor-nav-menu--main ul a.saucy-cart {
+#main-nav .elementor-widget-container nav.elementor-nav-menu--dropdown ul .saucy-cart,
+#main-nav .elementor-widget-container nav.elementor-nav-menu--main ul .saucy-cart {
   font-family: "Oswald", Sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
-#main-nav .elementor-widget-container nav.elementor-nav-menu--dropdown ul a.saucy-cart {
+#main-nav .elementor-widget-container nav.elementor-nav-menu--dropdown ul .saucy-cart {
   color: #999933;
 }
 
@@ -74,7 +74,7 @@ h1 {
   content: "\25BA \0020";
   font-size: 6px;
   position: absolute;
-  top: 10px;
+  top: 2px;
   left: -1px;
 }
 
@@ -140,13 +140,21 @@ button#seopress-user-consent-close {
   margin-bottom: 8px;
 }
 
+.elementor-element.elementor-products-grid#shop-cats ul.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.elementor-element.elementor-products-grid#shop-cats ul.products li.product-category.product a {
+  width: 100%;
+}
+
 .woocommerce ul.products,
 .woocommerce-page ul.products {
   flex-wrap: nowrap;
 }
 
 ul.products.columns-4 {
-  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -192,10 +200,7 @@ button.single_add_to_cart_button {
 }
 
 .cart-collaterals .cross-sells ul.products li .astra-shop-summary-wrap {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
   min-height: 140px;
 }
@@ -230,6 +235,13 @@ button.single_add_to_cart_button {
   color: #F3F3F3;
 }
 
+#sbi_load a span {
+  font-family: "Oswald", Sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 /* Events */
 .tribe-common.tribe-events h1,
 .tribe-common.tribe-events h2,
@@ -261,7 +273,11 @@ button.single_add_to_cart_button {
 #tribe-events-content .tribe-events-schedule h2,
 #tribe-events-content .tribe-events-single-event-description.tribe-events-content,
 #tribe-events-content .tribe-events-cal-links a,
-#tribe-events-content .tribe-events-single-section * {
+#tribe-events-content .tribe-events-single-section *,
+li.tribe-events-c-messages__message-list-item,
+.tribe-events-nav-previous a,
+.tribe-events-nav-next a,
+.tribe-events-notices ul li {
   font-family: 'Oswald', sans-serif !important;
 }
 
@@ -281,6 +297,16 @@ button.single_add_to_cart_button {
   color: #FFF;
 }
 
+.tribe-common.tribe-events .tribe-events-c-subscribe-dropdown__container {
+  display: none;
+}
+
+.tribe-events-notices {
+  background: #666;
+  border: 1px solid #000;
+  color: #FFF;
+}
+
 /* Footer */
 .footer-cta h5 {
   margin-bottom: 0 !important;
@@ -290,6 +316,10 @@ button.single_add_to_cart_button {
 @media (max-width: 1024px) {
   .reset-section {
     padding: 0 2em !important;
+  }
+
+  .elementor-element.elementor-products-grid#shop-cats ul.products li {
+    max-width: calc(33% - 15px);
   }
 }
 
@@ -330,6 +360,10 @@ button.single_add_to_cart_button {
 
   .woocommerce-page #content table.cart .button[name=apply_coupon] {
     padding: 10px 35px;
+  }
+
+  .elementor-element.elementor-products-grid#shop-cats ul.products li {
+    max-width: calc(50% - 20px);
   }
 }
 
@@ -376,12 +410,8 @@ button.single_add_to_cart_button {
   }
 
   #lookbook-3 .elementor-column-wrap.elementor-element-populated .elementor-widget-wrap {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     flex-direction: row;
-    -webkit-box-pack: justify;
     justify-content: space-between;
   }
 
@@ -391,10 +421,7 @@ button.single_add_to_cart_button {
 
   /* WooCommerce */
   .astra-shop-summary-wrap {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-flow: column nowrap;
     height: 12em;
   }
@@ -433,10 +460,7 @@ button.single_add_to_cart_button {
 
 @media (min-width: 1200px) {
   #lookbook-3 .elementor-column-wrap.elementor-element-populated .elementor-widget-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: justify;
     justify-content: space-between;
   }
 
